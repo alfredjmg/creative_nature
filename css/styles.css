@@ -1,0 +1,633 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Staatliches', cursive;
+}
+
+/* -------------------- Header -------------------- */
+
+.header-container{
+    width: 100%;
+    height: 100vh;
+    padding: 2vh 0 2vh 0;
+}
+
+.header{
+    background-image: linear-gradient(
+    rgba(255, 253, 144, 0.35), 
+    rgb(255, 255, 255, 0.2)
+    ),
+    url("/img/forest.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 96%;
+    height: 96vh;
+    margin: 0vh 2% 0vh 2%;
+    overflow: hidden;
+}
+
+/* Menu */
+
+.header .menu{
+    margin: 5vh 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .menu .up{
+    display: flex;
+    margin-left: 4%;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-bottom: 0px;
+    list-style-type: none;
+}
+
+.header .menu .up .logo a{
+    text-decoration: none;
+    color: #333333;
+    font-size: 2vw;
+}
+
+.header .menu .up .display{
+    display: none;
+}
+
+.header .menu .down{
+    display: block;
+    width: 100%;
+}
+
+.header .menu .down .options{
+    display: flex;
+    margin-right: 3%;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-bottom: 0px;
+    list-style-type: none;
+}
+
+.header .menu .down .options li{
+    margin: 0 1.5% 0 1.5%;
+}
+
+.header .menu .down .options li .nav-links{
+    font-size: 1.4vw;
+    border: 2px transparent solid;
+    padding: 2vh 2.5vw 2vh 2.5vw;
+    transition: border 0.5s;
+}
+
+.header .menu .down .options li .nav-links:hover{
+    border: 2px #333333 solid;
+}
+
+
+/* Menu */
+  
+.title .title-text {
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333333;
+    width: 80%;
+}
+
+.header .title .title-text h1{
+    font-size: 8vw;
+    margin: 0 auto;
+    font-weight: bold;
+    width: 100%;
+}
+
+.header .title .title-text h3{
+    font-size: 2.5vw;
+    margin: 0 auto;
+    font-weight: 400;
+    width: 80%;
+}
+
+.header .title .title-text hr{
+    width: 10%;
+    text-align: center;
+    margin: 1% auto 1% auto;
+    border: 5px solid #333333;
+}
+
+/* -------------------- Header -------------------- */
+
+/* -------------------- Articles -------------------- */
+
+.articles-container{
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14vh 0 16vh 0;
+}
+
+.articles-container .title-container{
+    width: 100%;
+    margin: auto 0;
+    text-align: center;
+    font-size: 2vw;
+    color: #333333;
+}
+
+.articles-container .title-container hr{
+    width: 8%;
+    text-align: center;
+    margin: 1% auto 1% auto;
+    border: 2.5px solid #333333;
+}
+
+.articles-container .articles{
+    margin: 4vh 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10% 0 10%;
+}
+
+.articles-container .articles .article{
+    width: 25%;
+    background-color: #ffffff;
+    color: #333333;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.articles-container .articles .article img{
+    width: 100%;
+}
+
+.articles-container .articles .article .content{
+    text-align: center;
+    padding: 0 20% 5vh 20%;
+}
+
+.articles-container .articles .article .content hr{
+    width: 14%;
+    text-align: center;
+    margin: 6vh auto 2vh auto;
+    border: 2.5px solid #333333;
+}
+
+/* -------------------- Articles -------------------- */
+
+/* -------------------- About -------------------- */
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    color: #333333;
+}
+
+.about-container .image{
+    width: 50%;
+    overflow: hidden;
+}
+
+.about-container .image img{
+    width: 100%;
+    height: 100%;
+    display:block;
+}
+
+.about-container .content-container{
+    width: 50%;
+    padding: 0 10% 0 10%;
+}
+
+.about-container .content-container .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.8vw;
+}
+
+.about-container .content-container hr{
+    width: 12%;
+    text-align: center;
+    margin: 1vh auto 2vh auto;
+    border: 2.5px solid #333333;
+}
+
+.about-container .content-container p{
+    padding-top: 4vh;
+    text-align: justify;
+    font-size: 1.4vw;
+}
+
+/* -------------------- About -------------------- */
+
+/* -------------------- Contact -------------------- */
+
+.contact-container{
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+}
+
+.contact-container .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16vh 0 16vh 0;
+    width: 100%;
+}
+
+.contact-container .contact .title{
+    font-size: 2.8vw;
+}
+
+.contact-container .contact .input-contact{
+    margin: 4vh auto 0 auto;
+    padding: 2vh 2% 2vh 2%;
+    outline: none;
+    width: 40%;
+}
+
+.contact-container .contact .button{
+    background-color: transparent;
+    border: 2px #333333 solid;
+    color: #333333;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5vw;
+    padding: 1vh 2% 1vh 2%;
+    margin: 4vh 0 0 0;
+    cursor: pointer;
+}
+
+/* -------------------- Contact -------------------- */
+
+/* -------------------- Footer -------------------- */
+
+.navbar {
+    font-size: 15px;
+    background: hsl(0, 0%, 100%);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #333333;
+    margin: 5vh 0 5vh 0;
+}
+
+.navbar-up {
+    display: flex;
+    margin-left: 3%;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-bottom: 0px;
+    list-style-type: none;
+}
+
+.navbar-up .main-nav {
+    display: flex;
+    margin-left: 4%;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-bottom: 0px;
+    list-style-type: none;
+}
+
+.navbar-up .main-nav li .nav-links{
+    font-size: 1.2vw;
+}
+
+.navbar-up .main-nav li .nav-links i.fa{
+    display: inline-block;
+    border-radius: 60px;
+    background-color: #333333;
+    padding: 0.5em 0.6em;
+    color: #ffffff;
+}
+
+.left {
+    margin-left: 15px;
+}
+
+.right {
+    margin-right: 25px;
+}
+
+.navbar-down {
+    display: block;
+    width: 100%;
+}
+
+.navbar-down .main-nav {
+    display: flex;
+    margin-right: 4%;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-bottom: 0px;
+    list-style-type: none;
+}
+
+.navbar-down .main-nav li .nav-links{
+    font-size: 1.4vw;
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: #333333;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: auto 0;
+    padding: 15px;
+}
+
+.active {
+    display: block;
+}
+
+/* -------------------- Footer -------------------- */
+
+/* ********************************* Phones ********************************* */
+
+@media screen and (max-width: 425px){
+
+    /* -------------------- Header -------------------- */
+
+    .header{
+        background-attachment: scroll;
+    }
+
+    .header .menu{
+        margin: 0vh 0 0 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        transition: 0.5s;
+    }
+
+    .header > .active{
+        background-color: rgba(255, 255, 255, 0.5);
+        transition: 0.5s;
+    }
+
+    .header .active .up{
+        border-bottom: 2px solid #333333;
+    }
+
+    .header .menu .up{
+        margin-left: 0%;
+        width: 100%;
+        justify-content: space-between;
+        margin: 2vh 0 0 0;
+    }
+
+    .header .menu .up .logo{
+        text-decoration: none;
+        color: #333333;
+        font-size: 2vw;
+        margin-left: 5%;
+    }
+
+    .header .menu .up .logo a{
+        text-decoration: none;
+        color: #333333;
+        font-size: 8vw;
+    }
+    
+    .header .menu .up .display{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5%;
+    }
+
+    .header .menu .up .display a{
+        text-decoration: none;
+        color: #333333;
+        font-size: 8vw;
+        margin-left: 5%;
+    }
+
+    .header .menu .down{
+        display: none;
+        width: auto;
+    }
+
+    .header .menu .active{
+        display: block;
+    }
+
+    .header .menu .down .options{
+        display: flex;
+        margin-right: 0%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0px;
+        list-style-type: none;
+        padding: 1vh 0 1vh 0;
+    }
+
+    .header .menu .down .options li{
+        margin: 0 0% 0 0%;
+        padding: 1vh 0 1vh 0;
+    }
+
+    .header .menu .down .options li .nav-links{
+        font-size: 4vw;
+        border: 0px transparent solid;
+        padding: 0;
+    }
+
+    .header .menu .down .options li .nav-links:hover{
+        border: transparent solid;
+    }
+
+    .header .title .title-text h1{
+        font-size: 18vw;
+    }
+
+    .header .title .title-text h3{
+        font-size: 6vw;
+    }
+
+    /* -------------------- Header -------------------- */
+
+    /* -------------------- Articles -------------------- */
+
+    .articles-container .title-container{
+        font-size: 10vw;
+    }
+
+    .articles-container .articles{
+        padding: 0 5% 0 5%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .articles-container .articles .article{
+        width: 100%;
+        margin: 2vh 0 2vh 0;
+    }
+
+    /* -------------------- Articles -------------------- */
+
+    /* -------------------- About -------------------- */
+
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        color: #333333;
+    }
+
+    .about-container .image{
+        width: 100%;
+    }
+
+    .about-container .content-container{
+        width: 100%;
+        padding: 6vh 10% 6vh 10%;
+    }
+
+    .about-container .content-container .content{
+        font-size: 6vw;
+    }
+
+    .about-container .content-container p{
+        padding-top: 4vh;
+        text-align: justify;
+        font-size: 3vw;
+    }
+
+    /* -------------------- About -------------------- */
+
+    /* -------------------- Contact -------------------- */
+
+.contact-container{
+    background-color: #d1d1d1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+}
+
+.contact-container .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8vh 0 8vh 0;
+    width: 100%;
+}
+
+.contact-container .contact .title{
+    font-size: 14vw;
+}
+
+.contact-container .contact .input-contact{
+    margin: 4vh auto 0 auto;
+    padding: 2vh 2% 2vh 2%;
+    outline: none;
+    width: 90%;
+}
+
+.contact-container .contact .button{
+    background-color: transparent;
+    border: 2px #333333 solid;
+    color: #333333;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 4vw;
+    width: 80%;
+    padding: 1vh 2% 1vh 2%;
+    margin: 4vh 0 0 0;
+    cursor: pointer;
+}
+
+/* -------------------- Contact -------------------- */
+
+/* ---------------- Navbar ---------------- */
+
+.navbar {
+    font-size: 15px;
+    background: hsl(0, 0%, 100%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-up{
+    margin: 0;
+}
+
+.navbar-up .main-nav{
+    margin: 0;
+}
+
+.navbar-up .main-nav li .nav-links{
+    font-size: 4vw;
+    margin: 0;
+}
+
+.navbar-down{
+    margin: 2vh 0 0 0;
+}
+
+.navbar-down .main-nav {
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar-down .main-nav li .nav-links{
+    font-size: 4vw;
+    margin: 0;
+}
+
+/* ---------------- Navbar ---------------- */
+
+}
+
+/* ********************************* Phones ********************************* */
